@@ -39,3 +39,8 @@ console.log(result3);
 //call and apply are almost same but different in condition writing
 const result4 = moynarma.treatDey.apply(tiarma, [300, 30]);
 console.log(result4);
+
+//bind make reusable function it can be called again
+const result5 = moynarma.treatDey.bind(tiarma);
+const newresult5 = result5(2500, 200);
+console.log(newresult5);
